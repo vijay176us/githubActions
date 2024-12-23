@@ -1,6 +1,6 @@
 name: Test Python version
 # run-name: ${{ github.actor }} is testing out python version 🚀
-on: [push]
+on: [push, workflow_dispatch]
 jobs:
     test:
         runs-on: ubuntu-latest

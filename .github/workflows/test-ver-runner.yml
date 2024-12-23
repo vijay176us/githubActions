@@ -1,5 +1,5 @@
 name: Test Python version
-run-name: ${{ github.actor }} is testing out python version 🚀
+# run-name: ${{ github.actor }} is testing out python version 🚀
 on: [push]
 jobs:
     test:

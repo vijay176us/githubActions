@@ -1,6 +1,6 @@
 name: Test Python version
 run-name: ${{ github.actor }} is testing out python version 🚀
-on: [push, pull_request]
+on: [push]
 jobs:
     test:
         runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
         - name: Checking Python version
-          run: python version
+          run: python -V
         # - name: Run tests
         #   run: |
         #         pytest
